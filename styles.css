@@ -17,6 +17,7 @@
     --secondary-color: #642f37;
     --primary-shadow: #8b8eaf;
     --secondary-shadow: #a17a69;
+    --black-color: #323232;
 
     /* Margins */
     --small-bottom-margin: 0.5rem;
@@ -110,3 +111,68 @@ nav ul li {
     display: none;
 }
 /* Navigation <<< */
+
+
+
+
+/* >>> Hero section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    max-width: 70rem;
+    margin: auto;
+    height: 100%;
+}
+
+.hero img {
+    height: 25rem;
+    width: 25rem;
+    border-radius: 50%;
+    padding: 15px;
+    opacity: 0.8;
+}
+
+.hero ul {
+    margin: auto;
+    display: inline-block;
+    text-align: left;
+    font-weight: var(--bold-font);
+}
+.hero li:not(:last-child) {
+    margin-bottom: var(--big-bottom-margin);
+}
+/* Hero section <<< */
+
+
+
+/* Section heading (except for hero section) */
+h2 {
+    width: 20rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: var(--big-bottom-margin);
+    background-color: var(--black-color);
+    color: white;
+ }
+
+
+
+/* >>> More about me section */
+.more-about-me {
+    background-color: var(--bg-color);
+    padding: 1rem 6rem;
+    width: 100%;
+    max-width: 1024px;
+    margin: auto;
+    text-align: justify;
+}
+
+.more-about-me p {
+    line-height: var(--normal-line-height);
+    padding: 0.4rem;
+}
+/* More about me section <<< */
