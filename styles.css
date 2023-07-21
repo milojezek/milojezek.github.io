@@ -32,7 +32,7 @@
     --transition: 0.3s;
     --slow-transition: 0.7s;
 
-    --rounded-corners: 5px;
+    --rounded-corners: 12px;
 }
 
 /* Variables <<< */
@@ -159,7 +159,7 @@ nav ul li {
 h2 {
     width: 20rem;
     padding: 0.5rem;
-    border-radius: 5px;
+    border-radius: var(--rounded-corners);
     text-align: center;
     margin: auto;
     margin-top: var(--big-margin);
@@ -213,3 +213,44 @@ h2 {
     box-shadow: 0 3px 10px var(--secondary-shadow);
 }
 /* Skills section <<<  */
+
+
+
+/* >>> Projects section */
+.projects {
+    background-color: var(--bg-color);
+    padding: 32px 0;
+}
+
+.all-projects-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-container {
+    text-align: center;
+    width: 22rem;
+    padding: 1rem;
+}
+
+.project-card {
+    border: 1px solid lightblue;
+    border-radius: var(--rounded-corners);
+    padding: 20px;
+    margin: 10px;
+}
+.project-card img {
+    width: 65%;
+    height: 60%;
+}
+.project-card h3 {
+    margin-bottom: var(--normal-margin);
+}
+
+.project-description {
+    margin-bottom: var(--normal-margin);
+    text-align: left;
+    padding: 0.4rem;
+}
+/* Projects section <<< */
