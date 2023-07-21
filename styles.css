@@ -136,14 +136,13 @@ nav ul li {
     align-items: center;
     justify-content: center;
     gap: 2.5rem;
-    max-width: var(--max-width);
+    max-width: 68rem;
     margin: auto;
-    height: 100%;
     margin-top: var(--big-margin);
     margin-bottom: var(--bigger-margin);
 }
 
-.hero img {
+.profile-photo {
     height: 25rem;
     width: 25rem;
     border-radius: 25% 10%;
@@ -151,8 +150,24 @@ nav ul li {
     opacity: 0.8;
 }
 
-.hero ul {
+.hero-container {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+}
+
+.bio {
+    padding: 0.5rem;
+}
+
+.bio-list {
     margin: auto;
+    text-align: center;
+}
+
+.bio-list ul {
     display: inline-block;
     text-align: left;
     font-weight: var(--bold-font);
@@ -179,7 +194,7 @@ nav ul li {
 .social-icons-container h1 {
     opacity: 0.7;
 }
-.social-icons-container img {
+.social-icon {
     width: 100px;
     height: 100px;
     opacity: 0.7;
@@ -301,3 +316,144 @@ h2 {
     padding: 0.4rem;
 }
 /* Projects section <<< */
+
+
+
+/* >>> Footer */
+footer {
+    padding: 1.25rem;
+    text-align: center;
+    margin: 2rem 0 0;
+}
+/* Footer <<< */
+
+
+
+/* >>> Responsivity */
+@media screen and (max-width: 1100px) {
+
+    /* >>> Navigation */
+    nav {
+        padding: 1.5rem 1rem;
+        width: 100%;
+        right: 0;
+        position: fixed;
+    }
+
+    nav ul {
+        position: fixed;
+        background-color: var(--bg-color);
+        flex-direction: column;
+        top: 86px;
+        left: 10%;
+        width: 80%;
+        text-align: center;
+        transform: translateX(120%);
+        transition: transform 0.5s ease-in;
+    }
+
+    nav ul li {
+        margin: 8px;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    nav ul.show {
+        transform: translateX(0);
+    }
+    /* Navigation <<< */
+
+
+
+    /* >>> Hero section */
+    .hero {
+        margin-top: var(--bigger-margin);
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .hero-container {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .profile-photo {
+        height: 20rem;
+        width: 20rem;
+    }
+
+    .bio {
+        width: 100%;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .social-icon {
+        width: 50px;
+        height: 50px;
+    }
+    /* <<< Hero section */
+
+
+
+    /* >>> More about me section */
+    .more-about-me {
+        padding: 1rem 3.5rem;
+    }
+
+    .more-about-me p {
+        text-align: justify;
+    }
+
+    /* <<< More about me section */ 
+
+
+
+    /* >>> Skills section */
+    .skills-wrapper {
+        width: 50%;
+        margin: auto;
+    }
+
+    /* Skills section <<< */
+
+    /* >>> Projects section */
+    .all-projects-container {
+        flex-direction: column;
+    }
+
+    .project-container {
+        width: 20rem;
+    }
+    /* Projects section <<< */
+}
+
+@media screen and (max-width:600px) {
+    nav h1 {
+        font-size: 1rem;
+    }
+
+    .bio {
+        width: 18rem;
+    }
+
+    .social-icons-container {
+        margin-top: var(--bigger-margin);
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .profile-photo {
+        height: 25rem;
+        width: 23rem;
+    }
+
+    .project-container {
+        max-width: 18rem;
+    }
+}
+
+/* Responsivity <<< */
