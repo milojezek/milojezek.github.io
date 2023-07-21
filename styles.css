@@ -3,6 +3,8 @@
 
 /* >>> Variables */
 :root {
+    --max-width: 1000px;
+
     /* Font variables */
     --font-family: "IBM Plex Mono", monospace;
     --normal-font: 400;
@@ -23,6 +25,7 @@
     --small-margin: 0.5rem;
     --normal-margin: 1rem;
     --big-margin: 2rem;
+    --bigger-margin: 4rem;
 
     /* Line heights */
     --normal-line-height: 1.7rem;
@@ -32,7 +35,13 @@
     --transition: 0.3s;
     --slow-transition: 0.7s;
 
-    --rounded-corners: 12px;
+    /* Rounded corners */
+    --rounded-corners: 5px;
+    --card-rounded-corners: 12px;
+
+    /* Icon & Card hover effects */
+    --hover-transform: translate3D(0, -1px, 0) scale(1.1);
+    --hover-shadow: 0 3px 10px var(--primary-shadow)
 }
 
 /* Variables <<< */
@@ -127,15 +136,17 @@ nav ul li {
     align-items: center;
     justify-content: center;
     gap: 2.5rem;
-    max-width: 70rem;
+    max-width: var(--max-width);
     margin: auto;
     height: 100%;
+    margin-top: var(--big-margin);
+    margin-bottom: var(--bigger-margin);
 }
 
 .hero img {
     height: 25rem;
     width: 25rem;
-    border-radius: 50%;
+    border-radius: 25% 10%;
     padding: 15px;
     opacity: 0.8;
 }
@@ -148,8 +159,37 @@ nav ul li {
 }
 
 .hero li:not(:last-child) {
-    margin-bottom: var(--big-margin);
+    margin-bottom: var(--normal-margin);
 }
+
+/* >>> Socials */
+.socials {
+    margin-top: var(--normal-margin);
+    width: 100%;
+}
+
+.social-icons-container {
+    margin: auto;
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+.social-icons-container h1 {
+    opacity: 0.7;
+}
+.social-icons-container img {
+    width: 100px;
+    height: 100px;
+    opacity: 0.7;
+    border-radius: var(--card-rounded-corners);
+}
+.social-icons-container img:hover {
+    transform: var(--hover-transform);
+    opacity: 1;
+}
+/* Socials <<< */
 
 /* Hero section <<< */
 
@@ -175,11 +215,12 @@ h2 {
     background-color: var(--bg-color);
     padding: 1rem 6rem;
     width: 100%;
+    margin-bottom: var(--bigger-margin);
 }
 
 .more-about-me-text {
     text-align: justify;
-    max-width: 1024px;
+    max-width: var(--max-width);
     margin: auto;
 }
 
@@ -195,8 +236,10 @@ h2 {
 /*  >>> Skills section */
 .skills {
     width: 100%;
+    max-width: var(--max-width);
     margin: auto;
     text-align: center;
+    margin-bottom: var(--bigger-margin);
 }
 .skills img {
     padding: 1.5rem;
@@ -207,10 +250,9 @@ h2 {
     height: 8rem;
     background-color: white;
     border: 1px solid lightblue;
-    border-radius: var(--rounded-corners);
+    border-radius: var(--card-rounded-corners);
     padding: 20px;
     margin: 10px;
-    box-shadow: 0 3px 10px var(--secondary-shadow);
 }
 /* Skills section <<<  */
 
@@ -219,13 +261,14 @@ h2 {
 /* >>> Projects section */
 .projects {
     background-color: var(--bg-color);
-    padding: 32px 0;
+    padding: 25px 0;
+    margin-bottom: var(--bigger-margin);
 }
 
 .all-projects-container {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center;;
 }
 
 .project-container {
@@ -236,7 +279,7 @@ h2 {
 
 .project-card {
     border: 1px solid lightblue;
-    border-radius: var(--rounded-corners);
+    border-radius: var(--card-rounded-corners);
     padding: 20px;
     margin: 10px;
 }
@@ -246,6 +289,10 @@ h2 {
 }
 .project-card h3 {
     margin-bottom: var(--normal-margin);
+}
+.project-card:hover {
+    transform: var(--hover-transform);
+    box-shadow: var(--hover-shadow);
 }
 
 .project-description {
