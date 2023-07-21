@@ -20,9 +20,9 @@
     --black-color: #323232;
 
     /* Margins */
-    --small-bottom-margin: 0.5rem;
-    --normal-bottom-margin: 1rem;
-    --big-bottom-margin: 2rem;
+    --small-margin: 0.5rem;
+    --normal-margin: 1rem;
+    --big-margin: 2rem;
 
     /* Line heights */
     --normal-line-height: 1.7rem;
@@ -31,7 +31,10 @@
     /* Transitions */
     --transition: 0.3s;
     --slow-transition: 0.7s;
-} 
+
+    --rounded-corners: 5px;
+}
+
 /* Variables <<< */
 
 
@@ -63,6 +66,7 @@ a:hover {
 body {
     font-family: var(--font-family);
 }
+
 /* CSS Resets & Initial Settings <<< */
 
 
@@ -88,6 +92,7 @@ nav {
 nav h1 {
     color: var(--primary-color);
 }
+
 nav a {
     color: var(--primary-color);
     transition: var(--transition);
@@ -110,6 +115,7 @@ nav ul li {
     cursor: pointer;
     display: none;
 }
+
 /* Navigation <<< */
 
 
@@ -140,9 +146,11 @@ nav ul li {
     text-align: left;
     font-weight: var(--bold-font);
 }
+
 .hero li:not(:last-child) {
-    margin-bottom: var(--big-bottom-margin);
+    margin-bottom: var(--big-margin);
 }
+
 /* Hero section <<< */
 
 
@@ -154,10 +162,11 @@ h2 {
     border-radius: 5px;
     text-align: center;
     margin: auto;
-    margin-bottom: var(--big-bottom-margin);
+    margin-top: var(--big-margin);
+    margin-bottom: var(--normal-margin);
     background-color: var(--black-color);
     color: white;
- }
+}
 
 
 
@@ -166,13 +175,41 @@ h2 {
     background-color: var(--bg-color);
     padding: 1rem 6rem;
     width: 100%;
+}
+
+.more-about-me-text {
+    text-align: justify;
     max-width: 1024px;
     margin: auto;
-    text-align: justify;
 }
 
 .more-about-me p {
     line-height: var(--normal-line-height);
     padding: 0.4rem;
 }
+
 /* More about me section <<< */
+
+
+
+/*  >>> Skills section */
+.skills {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+.skills img {
+    padding: 1.5rem;
+}
+
+.skill-card {
+    width: 8rem;
+    height: 8rem;
+    background-color: white;
+    border: 1px solid lightblue;
+    border-radius: var(--rounded-corners);
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 3px 10px var(--secondary-shadow);
+}
+/* Skills section <<<  */

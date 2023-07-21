@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,49 +10,33 @@
     <link rel="stylesheet" href="styles.css" />
 
     <!-- Favicons -->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="assets/icons/android-chrome-man-technologist-192x192.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="assets/icons/favicon-man-technologist-32x32.png"
-    />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/android-chrome-man-technologist-192x192.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-man-technologist-32x32.png" />
 
     <!-- Animate CSS CDN -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <title>Milek | SW Developer</title>
-  </head>
+</head>
 
-  <body>
+<body>
     <!-- Navbar -->
     <nav>
         <h1>Miloslav Jezek (Milek)</h1>
         <ul class="navigation">
-          <li><a href="#about" class="nav-link">About</a></li>
-          <li><a href="#skills" class="nav-link">Skills</a></li>
-          <li><a href="#projects" class="nav-link">Projects</a></li>
-          <li><a href="#contact" class="nav-link">Contact</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
         <button class="hamburger-menu" id="hamburger-menu">
-          <ion-icon class="bars" name="menu-outline"></ion-icon>
+            <ion-icon class="bars" name="menu-outline"></ion-icon>
         </button>
-  </nav>
+    </nav>
+
 
     <!-- Hero Section -->
     <section class="hero" id="hero">
-        <img
-            src="assets/images/my-photo.png"
-            alt="Miloslav Jezek Photo"
-            loading="lazy"
-            class="hero-img"
-        />
+        <img src="assets/images/my-photo.png" alt="Miloslav Jezek Photo" loading="lazy" class="hero-img" />
         <div class="bio animate__animated animate__shakeX">
             <ul>
                 <li>~ Hey 👋 I'm Milek, Prague-based software developer</li>
@@ -66,6 +51,8 @@
     <!-- More about me section -->
     <section class="more-about-me">
         <h2>More About Me</h2>
+
+        <div class="more-about-me-text">
         <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
             nesciunt excepturi quos obcaecati incidunt voluptatem ipsam sunt ipsum,
@@ -80,10 +67,48 @@
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero,
             consequuntur labore? Ea totam voluptas amet!
         </p>
+    </div>
     </section>
 
 
     <!-- Skills section -->
+    <section class="skills" id="skills">
+        <h2>My Top Skills</h2>
+
+        <div class="skills-wrapper animate__animated animate__pulse">
+            <img
+                src="assets/images/kotlin.png"
+                class="skill-card"
+                alt="Kotlin" loading="lazy"
+            />
+            <img
+                src="assets/images/android.png"
+                class="skill-card"
+                alt="Kotlin" loading="lazy"
+            />
+            <img
+                src="assets/images/java.png"
+                class="skill-card"
+                alt="Kotlin" loading="lazy"
+            />
+            <img
+                src="assets/images/spring.png"
+                class="skill-card"
+                alt="Kotlin" loading="lazy"
+            />
+            <img
+                src="assets/images/postgres.png"
+                class="skill-card"
+                alt="Kotlin" loading="lazy"
+            />
+            <img
+                src="assets/images/firebase.png"
+                class="skill-card"
+                alt="Kotlin" loading="lazy"
+            />
+        </div>
+    </section>
+
 
     <!-- Projects section -->
 
@@ -97,13 +122,8 @@
 
     <!-- JS scripts -->
     <script src="script.js"></script>
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
-  </body>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
 </html>
