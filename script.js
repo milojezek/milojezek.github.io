@@ -8,8 +8,8 @@ burger.addEventListener("click", () => {
 });
 
 // Close hamburger menu when a link is clicked
-const navLink = document.querySelector(".nav-link");
-navLink.forEach((link) =>
+const navLinks = Array.from(document.querySelectorAll(".nav-link"));
+navLinks.forEach((link) =>
     link.addEventListener("click", () => {
         ul.classList.remove("show");
     })
