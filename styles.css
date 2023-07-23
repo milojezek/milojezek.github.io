@@ -76,6 +76,17 @@ body {
     font-family: var(--font-family);
 }
 
+/* .marked-text {
+    background-color: lightgray;
+    border-radius: var(--rounded-corners);
+    padding: 5px;
+}
+
+.marked-text a {
+    text-decoration: none;
+    color: var(--black-color);
+} */
+
 /* CSS Resets & Initial Settings <<< */
 
 
@@ -138,11 +149,11 @@ nav ul li {
     gap: 2.5rem;
     max-width: 68rem;
     margin: auto;
-    margin-top: var(--big-margin);
+    margin-top: var(--small-margin);
     margin-bottom: var(--bigger-margin);
 }
 
-.profile-photo {
+.hero-img {
     height: 25rem;
     width: 25rem;
     border-radius: 25% 10%;
@@ -191,19 +202,23 @@ nav ul li {
     justify-content: center;
     padding: 5px;
 }
+
 .social-icons-container h1 {
     opacity: 0.7;
 }
+
 .social-icon {
     width: 50px;
     height: 50px;
     opacity: 0.7;
     border-radius: var(--card-rounded-corners);
 }
+
 .social-icons-container img:hover {
     transform: var(--hover-transform);
     opacity: 1;
 }
+
 /* Socials <<< */
 
 /* Hero section <<< */
@@ -234,15 +249,20 @@ h2 {
 }
 
 .more-about-me-text {
-    text-align: justify;
+    text-align: left;
     max-width: var(--max-width);
     margin: auto;
+}
+
+.more-about-me-text li:not(:last-child) {
+    margin-bottom: var(--big-margin);
 }
 
 .more-about-me p {
     line-height: var(--normal-line-height);
     padding: 0.4rem;
 }
+
 
 /* More about me section <<< */
 
@@ -256,6 +276,13 @@ h2 {
     text-align: center;
     margin-bottom: var(--bigger-margin);
 }
+
+.skills-wrapper {
+    margin-bottom: var(--normal-margin);
+    padding: 15px;
+}
+
+
 .skills img {
     padding: 1.5rem;
 }
@@ -269,6 +296,7 @@ h2 {
     padding: 20px;
     margin: 10px;
 }
+
 /* Skills section <<<  */
 
 
@@ -283,7 +311,8 @@ h2 {
 .all-projects-container {
     display: flex;
     align-items: center;
-    justify-content: center;;
+    justify-content: center;
+    ;
 }
 
 .project-container {
@@ -298,13 +327,16 @@ h2 {
     padding: 20px;
     margin: 10px;
 }
+
 .project-card img {
     width: 65%;
     height: 60%;
 }
+
 .project-card h3 {
     margin-bottom: var(--normal-margin);
 }
+
 .project-card:hover {
     transform: var(--hover-transform);
     box-shadow: var(--hover-shadow);
@@ -315,6 +347,7 @@ h2 {
     text-align: left;
     padding: 0.4rem;
 }
+
 /* Projects section <<< */
 
 
@@ -325,6 +358,7 @@ footer {
     text-align: center;
     margin: 2rem 0 0;
 }
+
 /* Footer <<< */
 
 
@@ -363,6 +397,7 @@ footer {
     nav ul.show {
         transform: translateX(0);
     }
+
     /* Navigation <<< */
 
 
@@ -379,7 +414,7 @@ footer {
         gap: 0;
     }
 
-    .profile-photo {
+    .hero-img {
         height: 20rem;
         width: 20rem;
     }
@@ -389,6 +424,7 @@ footer {
         margin-left: 10px;
         margin-right: 10px;
     }
+
     /* <<< Hero section */
 
 
@@ -402,7 +438,7 @@ footer {
         text-align: justify;
     }
 
-    /* <<< More about me section */ 
+    /* <<< More about me section */
 
 
 
@@ -410,6 +446,7 @@ footer {
     .skills-wrapper {
         width: 50%;
         margin: auto;
+        margin-bottom: var(--big-margin);
     }
 
     /* Skills section <<< */
@@ -422,6 +459,7 @@ footer {
     .project-container {
         width: 30rem;
     }
+
     /* Projects section <<< */
 }
 
@@ -440,7 +478,7 @@ footer {
 }
 
 @media screen and (max-width: 420px) {
-    .profile-photo {
+    .hero-img {
         height: 25rem;
         width: 23rem;
     }
