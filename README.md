@@ -1,3 +1,12 @@
-# My Portfolio Website
+# <h1 align="center">My Portfolio Website</h1>
 
-I've made this simple web portfolio to learn and practise some of the key elements of writing a static website. To make it as simple as possible I used (just) HTML, CSS, vanilla JavaScript,, and a little piece of [Animate.css](https://animate.style/) and [Ionicon](https://ionicframework.com/). In the near future, I'd like to add an option to switch to dark mode and translate the portfolio into languages I learn.
+<p align="center">👉 www.milojezek.github.io 👈</p>
+</br>
+
+I've made this simple web portfolio to learn and practise some of the key elements of writing a static website. To make it as simple as possible I used (just) HTML, CSS, vanilla JavaScript,, and a little piece of [Animate.css](https://animate.style/) and [Ionicon](https://ionicframework.com/). The portfolio is already public via GitHub Pages but there are still changes/improvements in both content and design I'd like to make, such as:
+
+- [ ] Rework the "My Skills" section to more accurately reflect my skills
+- [ ] Translate the portfolio to other languages (at least my native language, Czech)
+- [ ] Let reader select a language (English, Czech, other languages...)
+- [ ] Consider changing colors and add Dark Mode
+- [ ] Start adding recent projects
