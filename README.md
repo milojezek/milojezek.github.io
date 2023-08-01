@@ -11,3 +11,4 @@ I've made this simple web portfolio to learn and practise some of the key elemen
 - [ ] Let reader select a language (English, Czech, other languages...)
 - [ ] Consider changing colors and add Dark Mode
 - [ ] Start adding recent projects
+- [ ] New design
