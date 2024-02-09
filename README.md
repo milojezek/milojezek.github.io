@@ -1,14 +1,11 @@
-# <h1 align="center">My Portfolio Website</h1>
+# My Portfolio Website
 
-<p align="center">👉 <a href="https://milojezek.github.io/" target="_blank">LINK</a> 👈</p>
+This is [my minimalistic portfolio](https://milojezek.github.io/). It showcases my personality, skills, interests and work. Hopefully, it will also share my enthusiasm about being a developer. The portfolio isn't optimized for a job search or personal branding. It's hosted via GitHub Pages, and its purpose isn't to market myself.
 
-</br>
+## Motivation
+I'm not a big friend of CSS. However, I want to be comfortable using it instead of avoiding it. Therefore, I've created this portfolio to practise building a static website. It's a kind of playground for me. In the end, I'll have a minimalistic portfolio. I don't need one (at least now), but it's more fun than making something generic. Making websites professionally is not my goal, so I don't have to take it too seriously.
 
-I've made this simple web portfolio to learn and practise some of the key elements of writing a static website. To make it as simple as possible I used (just) HTML, CSS, vanilla JavaScript, and a little piece of [Animate.css](https://animate.style/) and [Ionicon](https://ionicframework.com/). The portfolio is already public via GitHub Pages but there are still changes/improvements in both content and design I'd like to make, such as:
+## Visit my portfolio
+**https://milojezek.github.io/**
 
-- [ ] Rework the "My Skills" section to more accurately reflect my skills
-- [ ] Translate the portfolio to other languages (at least my native language, Czech)
-- [ ] Let the reader select a language (English, Czech, other languages...)
-- [ ] Consider changing colours and add Dark Mode
-- [ ] Start adding recent projects
-- [ ] New design
+❗ The website is under reconstruction. Please keep in mind that it displays a lot of the old stuff. Both in terms of design and content.
