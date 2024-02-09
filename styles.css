@@ -164,6 +164,7 @@ nav ul li {
 .hero-container {
     margin-top: 50px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 2.5rem;
