@@ -1,0 +1,87 @@
+/* Google font: IBM Plex Mono 400 & 600 & 700 weight */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600;700&display=swap');
+
+:root {
+
+  /* FONT VARIABLES */
+  --font-family: "IBM Plex Mono", monospace;
+
+  /* COLORS */
+  --black-color: #323232;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+body {
+  height: 100vh;
+  background-color: teal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-family);
+}
+
+.card {
+  background: hsla(0,0%,100%,.3);
+  border-radius: 10px;
+  box-shadow: 0 8px 32px 0 rgba(0,0,0,.37);
+  color: var(--black-color);
+  padding: 10vmin;
+  left: 50%;
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  z-index: 2;
+}
+
+.welcome-text {
+  font-style: italic;
+}
+
+.name {
+  font-weight: 700;
+  padding: 20px 20px 0;
+  font-size: 3rem;
+}
+
+.title {
+  font-weight: 500;
+  margin-top: 0;
+  padding: 10px;
+  font-size: 2rem;
+}
+
+button {
+  align-items: center;
+  background: hsla(0,0%,100%,.1);
+  border: 3px solid var(--black-color);
+  color: var(--black-color);
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  padding: 15px 10px;
+  font-family: var(--font-family);
+  margin-top: 8px;
+}
+
+button:hover {
+  background-color: var(--black-color);
+  color: whitesmoke;
+  cursor: pointer;
+}
+
+button span {
+  display: none;
+}
+
+button:hover span {
+  display: block;
+}
+
+
