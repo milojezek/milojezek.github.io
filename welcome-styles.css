@@ -3,6 +3,8 @@
 
 :root {
 
+  --page-bacgkround: linear-gradient(-60deg,whitesmoke 50%,rgb(33, 163, 163) 0);
+
   /* FONT VARIABLES */
   --font-family: "IBM Plex Mono", monospace;
 
@@ -27,16 +29,16 @@ body {
 }
 
 .card {
-  background: hsla(0,0%,100%,.3);
+  background: hsla(0, 0%, 100%, .8);
   border-radius: 10px;
-  box-shadow: 0 8px 32px 0 rgba(0,0,0,.37);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, .37);
   color: var(--black-color);
   padding: 10vmin;
   left: 50%;
   position: fixed;
   top: 50%;
-  -webkit-transform: translate(-50%,-50%);
-  transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   z-index: 2;
 }
 
@@ -59,7 +61,7 @@ body {
 
 button {
   align-items: center;
-  background: hsla(0,0%,100%,.1);
+  background: hsla(0, 0%, 100%, .1);
   border: 3px solid var(--black-color);
   color: var(--black-color);
   display: flex;
@@ -84,4 +86,51 @@ button:hover span {
   display: block;
 }
 
+/* BACKGROUND ANIMATION */
+@-webkit-keyframes slide {
+  0% {
+      -webkit-transform: translateX(-25%);
+      transform: translateX(-25%)
+  }
 
+  to {
+      -webkit-transform: translateX(25%);
+      transform: translateX(25%)
+  }
+}
+
+@keyframes slide {
+  0% {
+      -webkit-transform: translateX(-25%);
+      transform: translateX(-25%)
+  }
+
+  to {
+      -webkit-transform: translateX(25%);
+      transform: translateX(25%)
+  }
+}
+
+.bg {
+  -webkit-animation: slide 9s ease-in-out infinite alternate;
+  animation: slide 9s ease-in-out infinite alternate;
+  background-image: var(--page-bacgkround);
+  bottom: 0;
+  left: -50%;
+  opacity: .5;
+  position: fixed;
+  right: -50%;
+  top: 0;
+  z-index: 1
+}
+
+.bg-2 {
+  animation-direction: alternate-reverse;
+  -webkit-animation-duration: 12s;
+  animation-duration: 12s
+}
+
+.bg-3 {
+  -webkit-animation-duration: 15s;
+  animation-duration: 15s
+}
