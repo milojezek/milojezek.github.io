@@ -1,188 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!--CSS Styles -->
-    <link rel="stylesheet" href="styles/old-styles.css" />
+  <link rel="stylesheet" href="./styles/styles.css" />
+  <link rel="stylesheet" href="./styles/welcome-styles.css" />
 
-    <!-- Favicons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/android-chrome-man-technologist-192x192.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-man-technologist-32x32.png" />
-
-    <!-- Animate CSS CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-
-    <title>Milek | Software Developer</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-waving-hand-32x32.png" />
+  
+  <title>Hello</title>
 </head>
-
 <body>
-    <!-- Navbar -->
-    <nav>
-        <h1><a href=".">Miloslav Jezek (Milek)</a></h1>
-        <ul class="navigation">
-            <li><a href="#about" class="nav-link">About</a></li>
-            <li><a href="#skills" class="nav-link">Skills</a></li>
-            <li><a href="#projects" class="nav-link">Projects</a></li>
-        </ul>
-        <button class="hamburger-menu" id="hamburger-menu">
-            <ion-icon class="bars" name="menu-outline"></ion-icon>
-        </button>
-    </nav>
-
-
-    <!-- Hero Section -->
-    <section class="hero" id="about">
-        <div class="hero-container">
-            <h2><em>❗Attention❗ The website is under reconstruction. Please keep in mind that it displays a lot of the old stuff. Both in terms of design and content.</em></h2>
-            <!-- <img src="assets/images/my-photo.png" class="hero-img" alt="Miloslav Jezek Photo" loading="lazy" /> -->
-            <div class="bio animate__animated animate__shakeX">
-                <div class="bio-list">
-                    <ul>
-                        <li>~ Hey 👋 I'm Milek, a Prague-based software developer</li>
-                        <li>~ My passion is building web and mobile apps</li>
-                        <li>~ I focus mainly on backend and Android development</li>
-                    </ul>
-                </div>
-                <!-- Socials -->
-                <div class="socials">
-                    <div class="social-icons-container">
-                        <h1>Contact:</h1>
-                        <a href="https://linkedin.com/in/miloslav-jezek" target="_blank">
-                            <img src="assets/icons/linkedin.png" class="social-icon" alt="LinkedIn" loading="lazy" />
-                        </a>
-
-                        <a href="https://github.com/milojezek" target="_blank">
-                            <img src="assets/icons/github.png" class="social-icon" alt="GitHub" loading="lazy" />
-                        </a>
-
-                        <a href="mailto:milekdeveloper@gmail.com">
-                            <img src="assets/icons/email.png" class="social-icon" alt="Email" loading="lazy" />
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- More About Me section -->
-    <section class="more-about-me">
-        <h2>More About Me</h2>
-
-        <div class="more-about-me-text">
-            <ul>
-                <li>
-                    ~ 🛠️ Currently <span class="marked-text">working at FPT Czech</span> as a software developer and coding mostly
-                    in Java.
-                </li>
-                <li>
-                    ~ 🌱 Actively <span class="marked-text">learning Android development</span> with Futured Dev Academy and Udemy courses.
-                </li>
-                <li>
-                    ~ ☁️ Would like to learn more about other topics as well, especially DevOps and cloud computing.
-                </li>
-                <li>
-                    ~ 💪 Used to work in HR and switched to engineering in 2022.
-                </li>
-                <li>
-                    ~ 🏐 Particularly <span class="marked-text">interested in languages</span> (Scandinavian, Polish, German), playing volleyball...
-                </li>
-            </ul>
-        </div>
-    </section>
-
-
-    <!-- Skills section -->
-    <section class="skills" id="skills">
-        <h2>My Skills</h2>
-
-        <div class="skills-wrapper animate__animated animate__pulse">
-            <h3>⚙️ Backend</h3>
-            <img src="assets/images/kotlin.png" class="skill-card" alt="Kotlin" loading="lazy" />
-            <img src="assets/images/java.png" class="skill-card" alt="Java" loading="lazy" />
-            <img src="assets/images/spring.png" class="skill-card" alt="Spring" loading="lazy" />
-            <img src="assets/images/postgres.png" class="skill-card" alt="PostgreSQL" loading="lazy" />
-        </div>
-
-        <div class="skills-wrapper animate__animated animate__pulse">
-            <h3>🎨 Web Frontend</h3>
-            <img src="assets/images/html.png" class="skill-card" alt="HTML" loading="lazy" />
-            <img src="assets/images/css.png" class="skill-card" alt="CSS" loading="lazy" />
-            <img src="assets/images/javascript.png" class="skill-card" alt="JavaScript" loading="lazy" />
-        </div>
-
-        <div class="skills-wrapper animate__animated animate__pulse">
-            <h3>📱 Mobile</h3>
-            <img src="assets/images/kotlin.png" class="skill-card" alt="Kotlin" loading="lazy" />
-            <img src="assets/images/android.png" class="skill-card" alt="Android" loading="lazy" />
-        </div>
-
-    </section>
-
-
-    <!-- Projects section -->
-    <section class="projects" id="projects">
-        <h2>My Recent Projects</h2>
-        <div class="all-projects-container">
-            <div class="project-container">
-                <div class="project-card">
-                    <img src="assets/images/default_project_image.png" alt="PROJECT-NAME" loading="lazy" />
-                    <h3>PROJECT-NAME</h3>
-                    <p class="project-description">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
-                        ratione vel inventore labore commodi modi quos culpa aut saepe!
-                        Alias!
-                    </p>
-                </div>
-            </div>
-            <div class="project-container">
-                <div class="project-card">
-                    <img src="assets/images/default_project_image.png" alt="PROJECT-NAME" loading="lazy" />
-                    <h3>PROJECT-NAME</h3>
-                    <p class="project-description">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
-                        ratione vel inventore labore commodi modi quos culpa aut saepe!
-                        Alias!
-                    </p>
-                </div>
-            </div>
-            <div class="project-container">
-                <div class="project-card">
-                    <img src="assets/images/default_project_image.png" alt="PROJECT-NAME" loading="lazy" />
-                    <h3>PROJECT-NAME</h3>
-                    <p class="project-description">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
-                        ratione vel inventore labore commodi modi quos culpa aut saepe!
-                        Alias!
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- Footer section -->
-    <footer>
-        <p class="copy">&copy; Copyright 2023</p>
-        <p class="copy">
-            Built with &#x2661 by
-            <a href="https://github.com/milojezek" target="_blank">
-                Milek
-            </a>
-            </br>
-            Used images and icons from <a href="https://www.freepik.com/" target="_blank">
-                Freepik
-            </a>
-        </p>
-    </footer>
-
-    <!-- JS scripts -->
-    <script src="script.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <main>
+    <div class="bg"></div>
+    <div class="bg bg-2"></div>
+    <div class="bg bg-3"></div>
+    <div class="card">
+      <h4 class="welcome-text">Welcome to my corner of the internet, it's</h4>
+      <h1 class="name">Miloslav Jezek</h1>
+      <h2 class="title">Software Developer</h2>
+      <button onclick="window.location.href='old-index.html';">
+        <span class="active">⚡</span>
+          View my portfolio
+        <span class="active">⚡</span>
+      </button>
+    </div>
+  </main>
 </body>
 </html>
