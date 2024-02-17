@@ -7,9 +7,19 @@
 
   /* FONT VARIABLES */
   --font-family: "IBM Plex Mono", monospace;
+  --normal-font: 400;
+  --bold-font: 600;
+  --bolder-font: 700;
+  --big-font-size: 1rem;
+  --bigger-font-size: 2rem;
 
   /* COLORS */
   --black-color: #323232;
+  --shadow: rgba(0,0,0,.37);
+
+  /* Transitions */
+  --transition: 0.3s;
+  --slow-transition: 0.7s;
 }
 
 /* >>> CSS Resets & Initial Settings */
@@ -21,6 +31,7 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-align: center;
 }
 
 ul {

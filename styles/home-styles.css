@@ -1,3 +1,16 @@
+main {
+  grid-template-areas:
+  ". about ."
+  ". work ."
+  ". contact .";
+  height: 100%;
+  background-color: white;
+  display: grid;
+  grid-template-columns: .05fr 1fr .05fr;
+  grid-template-rows: .25fr auto;
+  padding-bottom: 2%;
+}
+
 /* >>> Navigation */
 nav {
   position: sticky;
@@ -11,17 +24,17 @@ nav {
   text-align: center;
   justify-content: space-between;
   padding: 1.5rem 3.5rem;
-  background-color: var(--bg-color);
-  box-shadow: 0 3px 5px var(--primary-shadow);
+  background-color: white;
+  box-shadow: 0 3px 5px var(--shadow);
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 }
 
 nav h1 {
-  color: var(--primary-color);
+  color: var(--black-color);
 }
 
 nav a {
-  color: var(--primary-color);
+  color: var(--black-color);
   transition: var(--transition);
 }
 
@@ -35,7 +48,7 @@ nav ul li {
 }
 
 .hamburger-menu {
-  color: var(--primary-color);
+  color: var(--black-color);
   font-size: var(--bigger-font-size);
   border: 0;
   background-color: transparent;
@@ -44,3 +57,33 @@ nav ul li {
 }
 
 /* Navigation <<< */
+
+/* >>> Sections */
+section {
+  display: block;
+}
+
+section h2 {
+  margin: 10px;
+  padding: 10px;
+}
+
+.content-container {
+  background: red;
+  border-radius: 10px;
+  box-shadow: 0 8px 32px 0 var(--shadow);
+  color: var(--black-color);
+  padding: 2%;
+}
+
+#about {
+  grid-area: about;
+}
+#work {
+  grid-area: work;
+}
+#contact {
+  grid-area: contact;
+}
+
+/* Sections <<< */
