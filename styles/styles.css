@@ -1,0 +1,53 @@
+/* Google font: IBM Plex Mono 400 & 600 & 700 weight */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600;700&display=swap');
+
+:root {
+
+  --page-bacgkround: linear-gradient(-60deg,whitesmoke 50%,rgb(33, 163, 163) 0);
+
+  /* FONT VARIABLES */
+  --font-family: "IBM Plex Mono", monospace;
+  --normal-font: 400;
+  --bold-font: 600;
+  --bolder-font: 700;
+  --big-font-size: 1rem;
+  --bigger-font-size: 2rem;
+
+  /* COLORS */
+  --black-color: #323232;
+  --shadow: rgba(0,0,0,.37);
+
+  /* Transitions */
+  --transition: 0.3s;
+  --slow-transition: 0.7s;
+}
+
+/* >>> CSS Resets & Initial Settings */
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+a:hover {
+  color: var(--secondary-color);
+}
+
+body {
+  font-family: var(--font-family);
+}
+/* CSS Resets & Initial Settings <<< */
