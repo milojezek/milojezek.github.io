@@ -1,0 +1,492 @@
+/* Google font: IBM Plex Mono 400 & 600 & 700 weight */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600;700&display=swap');
+
+/* >>> Variables */
+:root {
+    --max-width: 1000px;
+
+    /* Font variables */
+    --font-family: "IBM Plex Mono", monospace;
+    --normal-font: 400;
+    --bold-font: 600;
+    --bolder-font: 700;
+    --big-font-size: 1rem;
+    --bigger-font-size: 2rem;
+
+    /* Colors */
+    --bg-color: #fcfcfc;
+    --primary-color: #1a6585;
+    --secondary-color: #642f37;
+    --primary-shadow: #8b8eaf;
+    --secondary-shadow: #a17a69;
+    --black-color: #323232;
+
+    /* Margins */
+    --small-margin: 0.5rem;
+    --normal-margin: 1rem;
+    --big-margin: 2rem;
+    --bigger-margin: 4rem;
+
+    /* Line heights */
+    --normal-line-height: 1.7rem;
+    --big-line-height: 2.7rem;
+
+    /* Transitions */
+    --transition: 0.3s;
+    --slow-transition: 0.7s;
+
+    /* Rounded corners */
+    --rounded-corners: 5px;
+    --card-rounded-corners: 12px;
+
+    /* Icon & Card hover effects */
+    --hover-transform: translate3D(0, -1px, 0) scale(1.1);
+    --hover-shadow: 0 3px 10px var(--primary-shadow)
+}
+
+/* Variables <<< */
+
+
+
+/* >>> CSS Resets & Initial Settings */
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+a:hover {
+    color: var(--secondary-color);
+}
+
+body {
+    font-family: var(--font-family);
+}
+
+/* .marked-text {
+    background-color: lightgray;
+    border-radius: var(--rounded-corners);
+    padding: 5px;
+}
+
+.marked-text a {
+    text-decoration: none;
+    color: var(--black-color);
+} */
+
+/* CSS Resets & Initial Settings <<< */
+
+
+
+/* >>> Navigation */
+nav {
+    position: sticky;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    padding: 1.5rem 3.5rem;
+    background-color: var(--bg-color);
+    box-shadow: 0 3px 5px var(--primary-shadow);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav h1 {
+    color: var(--primary-color);
+}
+
+nav a {
+    color: var(--primary-color);
+    transition: var(--transition);
+}
+
+nav ul {
+    display: flex;
+    gap: 1.9rem;
+}
+
+nav ul li {
+    font-weight: var(--bold-font);
+}
+
+.hamburger-menu {
+    color: var(--primary-color);
+    font-size: var(--bigger-font-size);
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    display: none;
+}
+
+/* Navigation <<< */
+
+
+
+
+/* >>> Hero section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    max-width: 68rem;
+    margin: auto;
+    margin-top: var(--small-margin);
+    margin-bottom: var(--bigger-margin);
+}
+
+.hero-img {
+    height: 25rem;
+    width: 25rem;
+    border-radius: 25% 10%;
+    padding: 15px;
+    opacity: 0.8;
+}
+
+.hero-container {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+}
+
+.bio {
+    padding: 0.5rem;
+}
+
+.bio-list {
+    margin: auto;
+    text-align: center;
+}
+
+.bio-list ul {
+    display: inline-block;
+    text-align: left;
+    font-weight: var(--bold-font);
+}
+
+.hero li:not(:last-child) {
+    margin-bottom: var(--normal-margin);
+}
+
+/* >>> Socials */
+.socials {
+    margin-top: var(--normal-margin);
+    width: 100%;
+}
+
+.social-icons-container {
+    margin: auto;
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+
+.social-icons-container h1 {
+    opacity: 0.7;
+}
+
+.social-icon {
+    width: 50px;
+    height: 50px;
+    opacity: 0.7;
+    border-radius: var(--card-rounded-corners);
+}
+
+.social-icons-container img:hover {
+    transform: var(--hover-transform);
+    opacity: 1;
+}
+
+/* Socials <<< */
+
+/* Hero section <<< */
+
+
+
+/* Section heading (except for hero section) */
+h2 {
+    width: 20rem;
+    padding: 0.5rem;
+    border-radius: var(--rounded-corners);
+    text-align: center;
+    margin: auto;
+    margin-top: var(--big-margin);
+    margin-bottom: var(--normal-margin);
+    background-color: var(--black-color);
+    color: white;
+}
+
+
+
+/* >>> More about me section */
+.more-about-me {
+    background-color: var(--bg-color);
+    padding: 1rem 6rem;
+    width: 100%;
+    margin-bottom: var(--bigger-margin);
+}
+
+.more-about-me-text {
+    text-align: left;
+    max-width: var(--max-width);
+    margin: auto;
+    margin-top: var(--big-margin);
+}
+
+.more-about-me-text li:not(:last-child) {
+    margin-bottom: var(--big-margin);
+}
+
+.more-about-me p {
+    line-height: var(--normal-line-height);
+    padding: 0.4rem;
+}
+
+
+/* More about me section <<< */
+
+
+
+/*  >>> Skills section */
+.skills {
+    width: 100%;
+    max-width: var(--max-width);
+    margin: auto;
+    text-align: center;
+    margin-bottom: var(--big-margin);
+}
+
+.skills-wrapper {
+    margin-bottom: var(--normal-margin);
+    padding: 15px;
+}
+
+
+.skills img {
+    padding: 1.5rem;
+}
+
+.skill-card {
+    width: 8rem;
+    height: 8rem;
+    background-color: white;
+    border: 1px solid lightblue;
+    border-radius: var(--card-rounded-corners);
+    padding: 20px;
+    margin: 10px;
+}
+
+/* Skills section <<<  */
+
+
+
+/* >>> Projects section */
+.projects {
+    background-color: var(--bg-color);
+    padding: 25px 0;
+    margin-bottom: var(--bigger-margin);
+}
+
+.all-projects-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-container {
+    text-align: center;
+    width: 22rem;
+    padding: 1rem;
+}
+
+.project-card {
+    border: 1px solid lightblue;
+    border-radius: var(--card-rounded-corners);
+    padding: 20px;
+    margin: 10px;
+}
+
+.project-card img {
+    width: 65%;
+    height: 60%;
+}
+
+.project-card h3 {
+    margin-bottom: var(--normal-margin);
+}
+
+.project-card:hover {
+    transform: var(--hover-transform);
+    box-shadow: var(--hover-shadow);
+}
+
+.project-description {
+    margin-bottom: var(--normal-margin);
+    text-align: left;
+    padding: 0.4rem;
+}
+
+/* Projects section <<< */
+
+
+
+/* >>> Footer */
+footer {
+    padding: 1.25rem;
+    text-align: center;
+    margin: 2rem 0 0;
+}
+
+/* Footer <<< */
+
+
+
+/* >>> Responsivity */
+@media screen and (max-width: 1100px) {
+
+    /* >>> Navigation */
+    nav {
+        padding: 1.5rem 1rem;
+        width: 100%;
+        right: 0;
+        position: fixed;
+    }
+
+    nav ul {
+        position: fixed;
+        background-color: var(--bg-color);
+        flex-direction: column;
+        top: 86px;
+        left: 10%;
+        width: 80%;
+        text-align: center;
+        transform: translateX(120%);
+        transition: transform 0.5s ease-in;
+    }
+
+    nav ul li {
+        margin: 8px;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    nav ul.show {
+        transform: translateX(0);
+    }
+
+    /* Navigation <<< */
+
+
+
+    /* >>> Hero section */
+    .hero {
+        margin-top: var(--bigger-margin);
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .hero-container {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .hero-img {
+        height: 20rem;
+        width: 20rem;
+    }
+
+    .bio {
+        width: 100%;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    /* <<< Hero section */
+
+
+
+    /* >>> More about me section */
+    .more-about-me {
+        padding: 1rem 3.5rem;
+    }
+
+    .more-about-me p {
+        text-align: justify;
+    }
+
+    /* <<< More about me section */
+
+
+
+    /* >>> Skills section */
+    .skills-wrapper {
+        width: 50%;
+        margin: auto;
+        margin-bottom: var(--big-margin);
+    }
+
+    /* Skills section <<< */
+
+    /* >>> Projects section */
+    .all-projects-container {
+        flex-direction: column;
+    }
+
+    .project-container {
+        width: 30rem;
+    }
+
+    /* Projects section <<< */
+}
+
+@media screen and (max-width:600px) {
+    nav h1 {
+        font-size: 1rem;
+    }
+
+    .bio {
+        width: 18rem;
+    }
+
+    .social-icons-container {
+        margin-top: var(--normal-margin);
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .hero-img {
+        height: 25rem;
+        width: 23rem;
+    }
+
+    .project-container {
+        max-width: 18rem;
+    }
+}
+
+/* Responsivity <<< */
