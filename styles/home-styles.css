@@ -1,3 +1,4 @@
+/* Main as grid container */
 main {
   grid-template-areas:
   ". about ."
